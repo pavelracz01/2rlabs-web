@@ -11,8 +11,40 @@ import Footer from '@/components/Footer';
 const inter = Inter({ subsets: ['latin', 'latin-ext'] });
 
 export const metadata: Metadata = {
-  title: 'Testar Consulting — QA & Testing Services',
-  description: 'Professional QA consulting, manual testing, test automation and performance testing.'
+  title: {
+    default: '2R Labs — AI-Powered Full-Stack Development',
+    template: '%s | 2R Labs'
+  },
+  description: 'We build production-ready web applications using cutting-edge AI tools. From rapid prototyping to full-scale deployments.',
+  keywords: ['AI development', 'full-stack development', 'web applications', 'AI-powered coding', 'rapid prototyping', 'Claude Code', 'Cursor AI'],
+  authors: [{ name: '2R Labs' }],
+  creator: '2R Labs',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://2rlabs.com',
+    siteName: '2R Labs',
+    title: '2R Labs — AI-Powered Full-Stack Development',
+    description: 'We build production-ready web applications using cutting-edge AI tools.',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: '2R Labs — AI-Powered Development'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '2R Labs — AI-Powered Full-Stack Development',
+    description: 'We build production-ready web applications using cutting-edge AI tools.',
+    images: ['/og-image.png']
+  },
+  robots: {
+    index: true,
+    follow: true
+  }
 };
 
 const locales = ['cs', 'en'];
