@@ -13,7 +13,11 @@
   },
   "hero": {
     "title": "Software Development Consulting & Products",
-    "subtitle": "We help companies build better software and create our own innovative products"
+    "subtitle": "We help companies build better software and create our own innovative products",
+    "badge": "Innovation for the modern world",
+    "headline": "We develop software and products",
+    "headlineBold": "that shape the future",
+    "cta": "Contact Us"
   },
   "services": {
     "title": "Our Services",
@@ -92,5 +96,21 @@
   "caseStudies": {
     "title": "Case Studies",
     "subtitle": "Real results for real clients"
+  },
+  "AboutPage": {
+    "title": "About Us",
+    "subtitle": "Our values and story",
+    "meta": {
+      "title": "About Us - 2R Labs",
+      "description": "Get to know our team and the values that guide us in developing innovative software and products."
+    },
+    "team": {
+      "title": "Our Team",
+      "comingSoon": "Team introduction coming soon"
+    },
+    "values": {
+      "title": "Our Values",
+      "description": "We believe in innovation, quality, and transparent collaboration with our clients."
+    }
   }
 }
