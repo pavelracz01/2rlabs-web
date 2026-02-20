@@ -1,11 +1,11 @@
-// components/sections/WhyTestar.tsx
+// components/sections/Why2RLabs.tsx
 'use client';
 
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
 
-export default function WhyTestar() {
+export default function Why2RLabs() {
   const t = useTranslations('why');
   const points = t.raw('points') as string[];
   const stats = [

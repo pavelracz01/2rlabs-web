@@ -2,7 +2,7 @@
 import { setRequestLocale } from 'next-intl/server';
 import Hero from '@/components/sections/Hero';
 import Services from '@/components/sections/Services';
-import WhyTestar from '@/components/sections/WhyTestar';
+import Why2RLabs from '@/components/sections/Why2RLabs';
 import Process from '@/components/sections/Process';
 import References from '@/components/sections/References';
 import BlogPreview from '@/components/sections/BlogPreview';
@@ -16,7 +16,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     <main>
       <Hero />
       <Services />
-      <WhyTestar />
+      <Why2RLabs />
       <Process />
       <References />
       <BlogPreview />
