@@ -5,6 +5,8 @@ import Services from '@/components/sections/Services';
 import Why2RLabs from '@/components/sections/Why2RLabs';
 import Process from '@/components/sections/Process';
 import References from '@/components/sections/References';
+import ProductsPreview from '@/components/sections/ProductsPreview';
+import TeamPreview from '@/components/sections/TeamPreview';
 import BlogPreview from '@/components/sections/BlogPreview';
 import Contact from '@/components/sections/Contact';
 
@@ -19,6 +21,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <Why2RLabs />
       <Process />
       <References />
+      <ProductsPreview locale={locale} />
+      <TeamPreview locale={locale} />
       <BlogPreview />
       <Contact />
     </main>
