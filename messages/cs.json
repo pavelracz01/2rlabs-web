@@ -1,12 +1,15 @@
 {
   "nav": {
+    "home": "Domů",
     "services": "Služby",
     "why": "Proč 2R Labs",
     "process": "Jak pracujeme",
     "references": "Reference",
     "blog": "Blog",
     "contact": "Kontakt",
-    "caseStudies": "Případové studie"
+    "caseStudies": "Případové studie",
+    "products": "Produkty",
+    "about": "O nás"
   },
   "hero": {
     "title": "Poradenství ve vývoji SW a vlastní produkty",

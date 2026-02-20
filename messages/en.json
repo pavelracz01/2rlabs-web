@@ -1,12 +1,15 @@
 {
   "nav": {
+    "home": "Home",
     "services": "Services",
     "why": "Why 2R Labs",
     "process": "How We Work",
     "references": "References",
     "blog": "Blog",
     "contact": "Contact",
-    "caseStudies": "Case Studies"
+    "caseStudies": "Case Studies",
+    "products": "Products",
+    "about": "About"
   },
   "hero": {
     "title": "Software Development Consulting & Products",

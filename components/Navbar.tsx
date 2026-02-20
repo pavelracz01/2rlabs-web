@@ -27,11 +27,11 @@ export default function Navbar() {
   const switchPath = '/' + segments.join('/');
 
   const navLinks = [
-    { href: '#services', label: t('services') },
-    { href: '#why', label: t('why') },
-    { href: '#process', label: t('process') },
-    { href: '#references', label: t('references') },
+    { href: `/${locale}`, label: t('home') },
     { href: `/${locale}/blog`, label: t('blog') },
+    { href: `/${locale}/case-studies`, label: t('caseStudies') },
+    { href: `/${locale}/products`, label: t('products') },
+    { href: `/${locale}/about`, label: t('about') },
     { href: '#contact', label: t('contact') },
   ];
 
