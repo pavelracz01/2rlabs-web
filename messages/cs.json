@@ -78,8 +78,16 @@
     "error": "Chyba odeslání. Zkuste prosím znovu."
   },
   "footer": {
-    "rights": "Všechna práva vyhrazena.",
-    "privacy": "Ochrana osobních údajů"
+    "description": "Poradenství ve vývoji softwaru a inovativní produkty pro moderní firmy.",
+    "quickLinks": "Rychlé odkazy",
+    "home": "Domů",
+    "blog": "Blog",
+    "caseStudies": "Případové studie",
+    "products": "Produkty",
+    "about": "O nás",
+    "legal": "Právní informace",
+    "privacy": "Ochrana osobních údajů",
+    "rights": "Všechna práva vyhrazena."
   },
   "caseStudies": {
     "title": "Případové studie",

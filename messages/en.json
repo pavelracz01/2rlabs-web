@@ -78,8 +78,16 @@
     "error": "Send error. Please try again."
   },
   "footer": {
-    "rights": "All rights reserved.",
-    "privacy": "Privacy Policy"
+    "description": "Software development consulting and innovative products for modern businesses.",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "blog": "Blog",
+    "caseStudies": "Case Studies",
+    "products": "Products",
+    "about": "About",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "rights": "All rights reserved."
   },
   "caseStudies": {
     "title": "Case Studies",
