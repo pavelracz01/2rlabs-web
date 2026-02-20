@@ -1,0 +1,50 @@
+<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#grad1)"/>
+
+  <!-- Grid pattern overlay -->
+  <g opacity="0.1">
+    <line x1="0" y1="100" x2="800" y2="100" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="200" x2="800" y2="200" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="white" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="450" stroke="white" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="450" stroke="white" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="450" stroke="white" stroke-width="1"/>
+  </g>
+
+  <!-- DevOps icons -->
+  <g transform="translate(150, 120)">
+    <!-- Server icon -->
+    <rect x="0" y="0" width="80" height="60" rx="5" fill="white" opacity="0.9"/>
+    <circle cx="15" cy="15" r="4" fill="#1e40af"/>
+    <circle cx="15" cy="30" r="4" fill="#1e40af"/>
+    <circle cx="15" cy="45" r="4" fill="#1e40af"/>
+    <rect x="25" y="10" width="50" height="8" rx="2" fill="#e2e8f0"/>
+    <rect x="25" y="26" width="50" height="8" rx="2" fill="#e2e8f0"/>
+    <rect x="25" y="42" width="50" height="8" rx="2" fill="#e2e8f0"/>
+  </g>
+
+  <g transform="translate(350, 120)">
+    <!-- Gear icon -->
+    <circle cx="40" cy="30" r="35" fill="white" opacity="0.9"/>
+    <circle cx="40" cy="30" r="15" fill="none" stroke="#1e40af" stroke-width="6"/>
+    <circle cx="40" cy="30" r="8" fill="#1e40af"/>
+  </g>
+
+  <g transform="translate(550, 120)">
+    <!-- Deploy icon -->
+    <rect x="10" y="0" width="60" height="60" rx="5" fill="white" opacity="0.9"/>
+    <path d="M 40 15 L 55 35 L 40 35 L 40 50 L 25 30 L 40 30 Z" fill="#1e40af"/>
+  </g>
+
+  <!-- Title text -->
+  <text x="400" y="280" font-family="Arial, sans-serif" font-size="48" fill="white" text-anchor="middle" font-weight="bold">DevOps Platform</text>
+  <text x="400" y="320" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle" opacity="0.9">CI/CD Automation</text>
+</svg>
