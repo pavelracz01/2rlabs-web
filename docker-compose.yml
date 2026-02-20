@@ -9,9 +9,17 @@ services:
       NEXT_PUBLIC_SITE_URL: https://2rlabs.com
     labels:
       - "traefik.enable=true"
+      # HTTP router (for testing and redirects)
+      - "traefik.http.routers.2rlabs-http.rule=Host(`2rlabs.com`)"
+      - "traefik.http.routers.2rlabs-http.entrypoints=web"
+      - "traefik.http.routers.2rlabs-http.middlewares=2rlabs-redirect"
+      # HTTPS router
       - "traefik.http.routers.2rlabs.rule=Host(`2rlabs.com`)"
       - "traefik.http.routers.2rlabs.entrypoints=websecure"
       - "traefik.http.routers.2rlabs.tls.certresolver=letsencrypt"
+      # Redirect middleware
+      - "traefik.http.middlewares.2rlabs-redirect.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.2rlabs-redirect.redirectscheme.permanent=true"
     networks:
       - web
 
