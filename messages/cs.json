@@ -1,7 +1,7 @@
 {
   "nav": {
     "services": "Služby",
-    "why": "Proč Testar",
+    "why": "Proč 2R Labs",
     "process": "Jak pracujeme",
     "references": "Reference",
     "blog": "Blog",
@@ -9,10 +9,8 @@
     "caseStudies": "Případové studie"
   },
   "hero": {
-    "headline": "Kvalita, které můžete věřit.",
-    "headlineBold": "Rychlost, kterou pocítíte.",
-    "cta": "Zjistit více",
-    "badge": "10+ let zkušeností v QA"
+    "title": "Poradenství ve vývoji SW a vlastní produkty",
+    "subtitle": "Pomáháme firmám vytvářet lepší software a vyvíjíme vlastní inovativní produkty"
   },
   "services": {
     "title": "Naše služby",
@@ -35,7 +33,7 @@
     }
   },
   "why": {
-    "title": "Proč Testar Consulting",
+    "title": "Proč 2R Labs Consulting",
     "subtitle": "Váš spolehlivý QA partner",
     "stat1": { "value": "10+", "label": "let na trhu" },
     "stat2": { "value": "50+", "label": "úspěšných projektů" },

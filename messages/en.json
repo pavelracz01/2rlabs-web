@@ -1,7 +1,7 @@
 {
   "nav": {
     "services": "Services",
-    "why": "Why Testar",
+    "why": "Why 2R Labs",
     "process": "How We Work",
     "references": "References",
     "blog": "Blog",
@@ -9,10 +9,8 @@
     "caseStudies": "Case Studies"
   },
   "hero": {
-    "headline": "Quality you can trust.",
-    "headlineBold": "Speed you can feel.",
-    "cta": "Learn more",
-    "badge": "10+ years of QA expertise"
+    "title": "Software Development Consulting & Products",
+    "subtitle": "We help companies build better software and create our own innovative products"
   },
   "services": {
     "title": "Our Services",
@@ -35,7 +33,7 @@
     }
   },
   "why": {
-    "title": "Why Testar Consulting",
+    "title": "Why 2R Labs Consulting",
     "subtitle": "Your reliable QA partner",
     "stat1": { "value": "10+", "label": "years on the market" },
     "stat2": { "value": "50+", "label": "successful projects" },
