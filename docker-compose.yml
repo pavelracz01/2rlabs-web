@@ -12,3 +12,9 @@ services:
       - "traefik.http.routers.2rlabs.rule=Host(`2rlabs.com`)"
       - "traefik.http.routers.2rlabs.entrypoints=websecure"
       - "traefik.http.routers.2rlabs.tls.certresolver=letsencrypt"
+    networks:
+      - web
+
+networks:
+  web:
+    external: true
