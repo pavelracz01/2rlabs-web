@@ -2,6 +2,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
@@ -41,8 +42,8 @@ export default function Navbar() {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href={`/${locale}`} className="text-white font-bold text-xl tracking-tight">
-            Testar <span className="text-[#06B6D4]">Consulting</span>
+          <Link href={`/${locale}`} className="flex items-center">
+            <Image src="/logo.svg" alt="2R Labs" width={120} height={36} priority />
           </Link>
 
           {/* Desktop nav */}
