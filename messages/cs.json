@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "services": "Služby",
+    "why": "Proč Testar",
+    "process": "Jak pracujeme",
+    "references": "Reference",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "caseStudies": "Případové studie"
+  },
+  "hero": {
+    "headline": "Kvalita, které můžete věřit.",
+    "headlineBold": "Rychlost, kterou pocítíte.",
+    "cta": "Zjistit více",
+    "badge": "10+ let zkušeností v QA"
+  },
+  "services": {
+    "title": "Naše služby",
+    "subtitle": "Komplexní QA pokrytí pro váš produkt",
+    "manual": {
+      "title": "Manuální testování",
+      "desc": "Funkční, regresní a UAT testování prováděné zkušenými QA specialisty."
+    },
+    "automation": {
+      "title": "Automatizace testů",
+      "desc": "Robustní automatizované testy s Playwright, Cypress nebo Selenium."
+    },
+    "consulting": {
+      "title": "QA Consulting",
+      "desc": "Nastavení QA procesů, strategie testování a mentoring vašeho týmu."
+    },
+    "performance": {
+      "title": "Performance testování",
+      "desc": "Zátěžové a výkonnostní testy pro spolehlivý provoz pod tlakem."
+    }
+  },
+  "why": {
+    "title": "Proč Testar Consulting",
+    "subtitle": "Váš spolehlivý QA partner",
+    "stat1": { "value": "10+", "label": "let na trhu" },
+    "stat2": { "value": "50+", "label": "úspěšných projektů" },
+    "stat3": { "value": "100%", "label": "spokojenost klientů" },
+    "points": [
+      "Zkušenosti se startupy i enterprise projekty",
+      "Flexibilní spolupráce — ad hoc i dlouhodobá",
+      "Transparentní reporting a komunikace",
+      "Rychlý onboarding bez zbytečné byrokracie"
+    ]
+  },
+  "process": {
+    "title": "Jak pracujeme",
+    "steps": [
+      { "title": "Analýza", "desc": "Poznáme váš produkt, tým a cíle." },
+      { "title": "Plán", "desc": "Navrhneme strategii testování na míru." },
+      { "title": "Realizace", "desc": "Testujeme, reportujeme, iterujeme." },
+      { "title": "Předání", "desc": "Dokumentace, přenos know-how, podpora." }
+    ]
+  },
+  "references": {
+    "title": "Reference",
+    "subtitle": "Důvěřují nám"
+  },
+  "blog": {
+    "title": "Z našeho blogu",
+    "readMore": "Číst více",
+    "allPosts": "Všechny články"
+  },
+  "contact": {
+    "title": "Kontaktujte nás",
+    "subtitle": "Rádi si promluvíme o vašem projektu.",
+    "name": "Jméno",
+    "email": "E-mail",
+    "message": "Zpráva",
+    "send": "Odeslat",
+    "sending": "Odesílám...",
+    "success": "Zpráva odeslána! Ozveme se do 24 hodin.",
+    "error": "Chyba odeslání. Zkuste prosím znovu."
+  },
+  "footer": {
+    "rights": "Všechna práva vyhrazena.",
+    "privacy": "Ochrana osobních údajů"
+  },
+  "caseStudies": {
+    "title": "Případové studie",
+    "subtitle": "Reálné výsledky pro reálné klienty"
+  }
+}

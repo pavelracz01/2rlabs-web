@@ -1,0 +1,34 @@
+---
+title: "Performance Testing Basics"
+date: "2026-02-05"
+excerpt: "What you need to know before your first load test — key metrics, tools, and common mistakes."
+tags: ["performance", "load-testing", "beginners"]
+---
+
+# Performance Testing Basics
+
+Before you run your first load test, understand what you're measuring.
+
+## Key Metrics
+
+- **Response time** — How long does a request take?
+- **Throughput** — How many requests per second can your system handle?
+- **Error rate** — What % of requests fail under load?
+- **P95/P99 latency** — What's the worst-case for 95% / 99% of users?
+
+## Common Mistakes
+
+1. **Testing in production** — Use a staging environment that mirrors prod
+2. **Ignoring think time** — Real users pause between actions
+3. **Not warming up** — Cold starts skew results
+4. **Testing only the happy path** — Mix read and write operations
+
+## Tools We Use
+
+- **k6** — Modern, scriptable, great for CI/CD
+- **Gatling** — JVM-based, detailed reports
+- **Locust** — Python-based, easy to customize
+
+## Getting Started
+
+Contact us for a performance testing assessment — we'll help you set up meaningful benchmarks.

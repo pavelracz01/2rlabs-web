@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "services": "Services",
+    "why": "Why Testar",
+    "process": "How We Work",
+    "references": "References",
+    "blog": "Blog",
+    "contact": "Contact",
+    "caseStudies": "Case Studies"
+  },
+  "hero": {
+    "headline": "Quality you can trust.",
+    "headlineBold": "Speed you can feel.",
+    "cta": "Learn more",
+    "badge": "10+ years of QA expertise"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive QA coverage for your product",
+    "manual": {
+      "title": "Manual Testing",
+      "desc": "Functional, regression, and UAT testing by experienced QA specialists."
+    },
+    "automation": {
+      "title": "Test Automation",
+      "desc": "Robust automated test suites with Playwright, Cypress, or Selenium."
+    },
+    "consulting": {
+      "title": "QA Consulting",
+      "desc": "QA process setup, testing strategy, and team mentoring."
+    },
+    "performance": {
+      "title": "Performance Testing",
+      "desc": "Load and performance tests for reliable operation under pressure."
+    }
+  },
+  "why": {
+    "title": "Why Testar Consulting",
+    "subtitle": "Your reliable QA partner",
+    "stat1": { "value": "10+", "label": "years on the market" },
+    "stat2": { "value": "50+", "label": "successful projects" },
+    "stat3": { "value": "100%", "label": "client satisfaction" },
+    "points": [
+      "Experience with startups and enterprise projects",
+      "Flexible cooperation — ad hoc or long-term",
+      "Transparent reporting and communication",
+      "Fast onboarding without unnecessary bureaucracy"
+    ]
+  },
+  "process": {
+    "title": "How We Work",
+    "steps": [
+      { "title": "Analysis", "desc": "We get to know your product, team, and goals." },
+      { "title": "Plan", "desc": "We design a tailored testing strategy." },
+      { "title": "Execution", "desc": "We test, report, and iterate." },
+      { "title": "Handover", "desc": "Documentation, knowledge transfer, support." }
+    ]
+  },
+  "references": {
+    "title": "References",
+    "subtitle": "They trust us"
+  },
+  "blog": {
+    "title": "From Our Blog",
+    "readMore": "Read more",
+    "allPosts": "All posts"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We'd love to talk about your project.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Message sent! We'll get back to you within 24 hours.",
+    "error": "Send error. Please try again."
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy"
+  },
+  "caseStudies": {
+    "title": "Case Studies",
+    "subtitle": "Real results for real clients"
+  }
+}
