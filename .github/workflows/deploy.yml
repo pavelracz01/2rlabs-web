@@ -2,32 +2,12 @@ name: Deploy to VPS
 
 on:
   push:
-    branches:
-      - main   # Production deployment
-      - test   # Test deployment
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set environment based on branch
-        run: |
-          if [ "${{ github.ref }}" == "refs/heads/main" ]; then
-            echo "DEPLOY_ENV=prod" >> $GITHUB_ENV
-            echo "APP_DIR=testar-prod" >> $GITHUB_ENV
-            echo "CONTAINER_NAME=testar-prod" >> $GITHUB_ENV
-            echo "PATH_PREFIX=/testar" >> $GITHUB_ENV
-          else
-            echo "DEPLOY_ENV=test" >> $GITHUB_ENV
-            echo "APP_DIR=testar-test" >> $GITHUB_ENV
-            echo "CONTAINER_NAME=testar-test" >> $GITHUB_ENV
-            echo "PATH_PREFIX=/test-testar" >> $GITHUB_ENV
-          fi
-
       - name: Deploy to VPS
         uses: appleboy/ssh-action@master
         with:
@@ -35,29 +15,8 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
-            set -e
-
-            cd /opt/apps/${{ env.APP_DIR }}
-
-            git remote set-url origin git@github-testar:pavelracz01/testar-web.git
-            git fetch origin ${{ github.ref_name }}
-            git reset --hard origin/${{ github.ref_name }}
-
-            cat > .env << 'ENVEOF'
-            CONTAINER_NAME=${{ env.CONTAINER_NAME }}
-            PATH_PREFIX=${{ env.PATH_PREFIX }}
-            ENVEOF
-
-            docker compose down 2>/dev/null || true
-            docker rm -f ${{ env.CONTAINER_NAME }} 2>/dev/null || true
-            docker compose build --no-cache
-            docker compose up -d
-            docker ps | grep ${{ env.CONTAINER_NAME }}
-            echo "✅ Deployed ${{ env.DEPLOY_ENV }} at ${{ env.PATH_PREFIX }} successfully!"
-
-      - name: Notify deployment
-        run: |
-          echo "🚀 Deployment to ${{ env.DEPLOY_ENV }} completed!"
-          echo "Branch: ${{ github.ref_name }}"
-          echo "Commit: ${{ github.sha }}"
-          echo "Path: ${{ env.PATH_PREFIX }}"
+            cd /opt/apps/2rlabs-prod
+            git pull origin main
+            docker-compose down
+            docker-compose up -d --build
+            docker system prune -f
