@@ -1,25 +1,22 @@
 version: '3.8'
 services:
   2rlabs-web:
-    build: .
+    build:
+      context: .
+      args:
+        NEXT_PUBLIC_BASE_PATH: /2rlabs-web
     container_name: 2rlabs-web
     restart: unless-stopped
     environment:
       NODE_ENV: production
-      NEXT_PUBLIC_SITE_URL: https://2rlabs.com
+      NEXT_PUBLIC_SITE_URL: http://46.36.38.188/2rlabs-web
     labels:
       - "traefik.enable=true"
-      # HTTP router (for testing and redirects)
-      - "traefik.http.routers.2rlabs-http.rule=Host(`2rlabs.com`)"
-      - "traefik.http.routers.2rlabs-http.entrypoints=web"
-      - "traefik.http.routers.2rlabs-http.middlewares=2rlabs-redirect"
-      # HTTPS router
-      - "traefik.http.routers.2rlabs.rule=Host(`2rlabs.com`)"
-      - "traefik.http.routers.2rlabs.entrypoints=websecure"
-      - "traefik.http.routers.2rlabs.tls.certresolver=letsencrypt"
-      # Redirect middleware
-      - "traefik.http.middlewares.2rlabs-redirect.redirectscheme.scheme=https"
-      - "traefik.http.middlewares.2rlabs-redirect.redirectscheme.permanent=true"
+      - "traefik.http.routers.2rlabs-web.rule=PathPrefix(`/2rlabs-web`)"
+      - "traefik.http.routers.2rlabs-web.entrypoints=web"
+      - "traefik.http.services.2rlabs-web.loadbalancer.server.port=80"
+      - "traefik.http.middlewares.2rlabs-web-strip.stripprefix.prefixes=/2rlabs-web"
+      - "traefik.http.routers.2rlabs-web.middlewares=2rlabs-web-strip"
     networks:
       - web
 
