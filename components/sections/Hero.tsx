@@ -95,7 +95,7 @@ export default function Hero() {
           <Button
             asChild
             size="lg"
-            className="bg-gradient-to-r from-[#2563EB] to-[#06B6D4] hover:opacity-90 text-white text-lg px-8 py-6 rounded-full shadow-lg shadow-blue-500/25"
+            className="bg-brand-600 hover:bg-brand-700 text-white text-lg px-8 py-6 rounded-full shadow-lg shadow-brand-500/25"
           >
             <a href="#services">{t('cta')}</a>
           </Button>
