@@ -1,0 +1,26 @@
+{
+  "members": [
+    {
+      "id": "founder-1",
+      "name": "John Doe",
+      "role": "Founder & CEO",
+      "bio": "Software architect with 15+ years of experience building scalable systems. Passionate about clean code and helping teams deliver better software.",
+      "photo": "/images/team/john-doe.jpg",
+      "linkedin": "https://linkedin.com/in/johndoe",
+      "github": "https://github.com/johndoe",
+      "email": "john@2rlabs.com",
+      "order": 1
+    },
+    {
+      "id": "founder-2",
+      "name": "Jane Smith",
+      "role": "Co-Founder & CTO",
+      "bio": "Full-stack developer and DevOps expert. Loves automating everything and building developer tools that make life easier.",
+      "photo": "/images/team/jane-smith.jpg",
+      "linkedin": "https://linkedin.com/in/janesmith",
+      "github": "https://github.com/janesmith",
+      "email": "jane@2rlabs.com",
+      "order": 2
+    }
+  ]
+}
